@@ -1,0 +1,7 @@
+#新加任务需要把名字添加到fact_whaley.job的dependencies配置中
+#play事实表，vod1.0
+type=command
+table=fact_whaley_play
+mainclass=cn.whaley.datawarehouse.fact.whaley.Play
+command=sh ${working.dir}/../../../bin/fact_submit${frequency}.sh ${mainclass} --jobName fact_whaley_Play --startDate ${startDate} --endDate ${endDate} --startHour ${startHour} --endHour ${endHour}  --isOnline  ${isOnline}
+#command.1=sh ${working.dir}/../../../bin/addPartition${frequency}_source.sh --table fact_whaley_play --startDate ${startDate} --endDate ${endDate}  --startHour ${startHour} --endHour ${endHour} --isOnline  ${isOnline} --source vod10 --path fact_whaley_play

@@ -1,0 +1,4 @@
+type=command
+mainclass=cn.whaley.datawarehouse.dimension.whaley.AreaSourceAgg
+dependencies=dimension_whaley_SourceSite,dimension_whaley_LauncherEntrance,dimension_whaley_PageEntrance
+command=sh ${working.dir}/../../bin/submit.sh ${mainclass} ${owner} --isOnline  ${isOnline} --mode ${mode}

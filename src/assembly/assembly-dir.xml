@@ -1,0 +1,66 @@
+<assembly>
+    <id>release</id>
+    <formats>
+        <format>dir</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <dependencySets>
+        <dependencySet>
+            <useProjectArtifact>true</useProjectArtifact>
+            <excludes>
+                <exclude>*:*:jar</exclude>
+            </excludes>
+            <includes>
+                <include>cn.whaley:*:jar</include>
+            </includes>
+        </dependencySet>
+    </dependencySets>
+
+    <fileSets>
+
+        <!-- README.txt conf/ -->
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <outputDirectory>./</outputDirectory>
+            <includes>
+                <include>README.txt</include>
+                <include>conf/</include>
+            </includes>
+        </fileSet>
+
+
+        <fileSet>
+            <directory>${project.build.directory}/lib</directory>
+            <outputDirectory>./lib</outputDirectory>
+        </fileSet>
+
+        <fileSet>
+            <directory>${project.build.directory}/</directory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <outputDirectory>./lib</outputDirectory>
+        </fileSet>
+
+        <!-- *.sh -->
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+                <include>*.sh</include>
+            </includes>
+            <fileMode>755</fileMode>
+        </fileSet>
+
+        <!-- bin/*.sh -->
+        <fileSet>
+            <directory>src/main/resources/bin</directory>
+            <outputDirectory>/bin</outputDirectory>
+            <includes>
+                <include>*.sh</include>
+            </includes>
+            <fileMode>755</fileMode>
+        </fileSet>
+    </fileSets>
+</assembly>

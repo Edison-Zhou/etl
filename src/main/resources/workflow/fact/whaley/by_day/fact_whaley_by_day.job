@@ -1,0 +1,3 @@
+type=command
+dependencies=fact_whaley_MembershipProcess,fact_whaley_OnOff,fact_whaley_Play,fact_whaley_DetailView,fact_whaley_Play_Quality,fact_whaley_PlayPathClick,fact_whaley_vod20_Play
+command=echo "fact whaley db is end ..."

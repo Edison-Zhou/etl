@@ -1,0 +1,6 @@
+#新加任务需要把名字添加到fact_medusa.job的dependencies配置中
+type=command
+table=fact_medusa_program_click
+mainclass=cn.whaley.datawarehouse.fact.moretv.ProgramClick
+command=sh ${working.dir}/../../../bin/fact_submit${frequency}.sh ${mainclass} --jobName fact_medusa_ProgramClick --startDate ${startDate} --endDate ${endDate} --startHour ${startHour} --endHour ${endHour}  --isOnline  ${isOnline}
+#command.1=sh ${working.dir}/../../../bin/addPartition${frequency}.sh --table ${table} --startDate ${startDate} --endDate ${endDate} --startHour ${startHour} --endHour ${endHour} --isOnline  ${isOnline}

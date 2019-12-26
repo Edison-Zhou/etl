@@ -1,0 +1,4 @@
+type=command
+mainclass=cn.whaley.datawarehouse.dimension.moretv.TerminalUserLogin
+command=sh ${working.dir}/../../../bin/submit.sh ${mainclass} ${owner} --isOnline  ${isOnline}  --mode ${mode}
+dependencies=dimension_moretv_TerminalUser

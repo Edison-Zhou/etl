@@ -1,0 +1,3 @@
+type=command
+dependencies=fact_medusa_tencent_vipentrance_click_main3x,fact_medusa_tencent_vipentrance_click_main4x,fact_medusa_own_payment_purchase_flow
+command=echo "fact medusa is end ..."

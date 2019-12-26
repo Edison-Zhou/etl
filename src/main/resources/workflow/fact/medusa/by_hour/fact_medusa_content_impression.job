@@ -1,0 +1,4 @@
+type=command
+frequency=""
+mainclass=cn.whaley.datawarehouse.fact.ConfigFactEtl
+command=sh ${working.dir}/../../../bin/fact_submit${frequency}.sh ${mainclass} --jobName fact_medusa_content_impression --startDate ${startDate} --endDate ${endDate}  --startHour ${startHour} --endHour ${endHour} --isOnline  ${isOnline} --factId 23 --factColumn  ${factColumn}

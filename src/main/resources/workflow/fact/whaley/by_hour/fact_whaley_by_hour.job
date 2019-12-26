@@ -1,0 +1,3 @@
+type=command
+dependencies=fact_whaley_vod20_PathParse,fact_whaley_ad_main,fact_whaley_ad_riki,fact_whaley_ad_ssp
+command=echo "fact whaley parquet is end ..."

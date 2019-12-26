@@ -1,0 +1,4 @@
+#新加任务需要把名字添加到program_tag_all.job的dependencies配置中
+type=command
+mainclass=cn.whaley.datawarehouse.normalized.medusa.BindUidEntranceToOrder
+command=sh ${working.dir}/../../../bin/fact_submit_day.sh ${mainclass} --jobName bind_uid_to_order --startDate ${startDate} --endDate ${endDate}  --isOnline ${isOnline} --isRefresh ${isRefresh}

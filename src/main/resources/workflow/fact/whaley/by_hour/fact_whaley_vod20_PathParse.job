@@ -1,0 +1,4 @@
+type=command
+frequency=""
+mainclass=cn.whaley.datawarehouse.fact.whaley.vod20.PathParse
+command=sh ${working.dir}/../../../bin/fact_submit${frequency}.sh ${mainclass} --jobName fact_whaley_vod20_PathParse --startDate ${startDate} --endDate ${endDate} --startHour ${startHour} --endHour ${endHour}  --isOnline  ${isOnline} --isRefresh  ${isRefresh}

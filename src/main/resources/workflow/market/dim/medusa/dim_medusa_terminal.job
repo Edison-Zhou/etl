@@ -1,0 +1,3 @@
+type=command
+mainclass=cn.whaley.datawarehouse.market.dim.medusa.TerminalUser
+command=sh ${working.dir}/../../bin/submit.sh  ${mainclass} ${owner} --isOnline ${isOnline} --mode ${mode}

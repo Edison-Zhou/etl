@@ -1,0 +1,7 @@
+#新加任务需要把名字添加到fact_whaley_parquet.job的dependencies配置中
+#播放质量事实
+type=command
+table=fact_whaley_play_quality
+mainclass=cn.whaley.datawarehouse.fact.whaley.PlayQuality
+command=sh ${working.dir}/../../../bin/fact_submit${frequency}.sh ${mainclass} --jobName fact_whaley_Play_Quality --startDate ${startDate} --endDate ${endDate} --startHour ${startHour} --endHour ${endHour}  --isOnline  ${isOnline}
+#command.1=sh ${working.dir}/../../../bin/addPartition${frequency}.sh --table ${table} --startDate ${startDate} --endDate ${endDate}  --startHour ${startHour} --endHour ${endHour} --isOnline  ${isOnline}

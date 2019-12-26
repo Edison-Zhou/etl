@@ -1,0 +1,4 @@
+#新加任务需要把名字添加到dimension_kidsedu.job的dependencies配置中
+type=command
+mainclass=cn.whaley.datawarehouse.dimension.kidsedu.LayoutPage
+command=sh ${working.dir}/../../bin/submit.sh ${mainclass} ${owner} --isOnline  ${isOnline} --mode ${mode}

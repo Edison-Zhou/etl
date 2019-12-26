@@ -1,0 +1,6 @@
+type=command
+database=dw_normalized
+table=medusa_program_base_info
+mainclass=cn.whaley.datawarehouse.normalized.medusa.Program
+command=sh ${working.dir}/../../../bin/fact_submit_day.sh ${mainclass} --jobName program_base_info --startDate ${startDate} --endDate ${endDate}  --isOnline  ${isOnline}
+command.1=sh ${working.dir}/../../../bin/addPartition_day.sh --database ${database} --table ${table} --startDate ${startDate} --endDate ${endDate} --isOnline  ${isOnline}

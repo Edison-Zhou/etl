@@ -1,0 +1,3 @@
+type=command
+mainclass=cn.whaley.datawarehouse.normalized.recommend.VideoTag2Vector
+command=sh ${working.dir}/../../bin/submit.sh ${mainclass} ${owner} --isOnline  ${isOnline}

@@ -1,0 +1,4 @@
+#新加任务需要把名字添加到dimension_utvmore.job的dependencies配置中
+type=command
+mainclass=cn.whaley.datawarehouse.dimension.utvmore.LayoutPage
+command=sh ${working.dir}/../../../bin/submit.sh ${mainclass} zhu.bingxin --isOnline  ${isOnline} --mode ${mode}

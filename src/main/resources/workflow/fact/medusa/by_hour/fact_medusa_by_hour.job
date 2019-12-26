@@ -1,0 +1,3 @@
+type=command
+dependencies=fact_medusa_content_impression
+command=echo "fact medusa is end ..."

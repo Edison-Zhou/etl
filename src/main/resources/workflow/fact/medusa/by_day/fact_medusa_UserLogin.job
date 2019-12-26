@@ -1,0 +1,6 @@
+#新加任务需要把名字添加到fact_medusa.job的dependencies配置中
+type=command
+table=fact_medusa_user_login
+mainclass=cn.whaley.datawarehouse.fact.moretv.UserLogin
+command=sh ${working.dir}/../../../bin/fact_submit${frequency}.sh ${mainclass} --jobName fact_medusa_UserLogin --startDate ${startDate} --endDate ${endDate}  --isOnline  ${isOnline}
+#command.1=sh ${working.dir}/../../../bin/addPartition${frequency}.sh --table ${table} --startDate ${startDate} --endDate ${endDate} --isOnline  ${isOnline}

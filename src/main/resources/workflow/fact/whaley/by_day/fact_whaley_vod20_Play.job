@@ -1,0 +1,5 @@
+#play事实
+type=command
+mainclass=cn.whaley.datawarehouse.fact.whaley.vod20.Play
+command=sh ${working.dir}/../../../bin/fact_submit${frequency}.sh ${mainclass} --jobName fact_whaley_vod20_Play --startDate ${startDate} --endDate ${endDate} --startHour ${startHour} --endHour ${endHour}  --isOnline  ${isOnline}
+#command.1=sh ${working.dir}/../../../bin/addPartition${frequency}_source.sh --table fact_whaley_play --startDate ${startDate} --endDate ${endDate}  --startHour ${startHour} --endHour ${endHour} --isOnline  ${isOnline} --source vod20 --path fact_whaley_play_vod20

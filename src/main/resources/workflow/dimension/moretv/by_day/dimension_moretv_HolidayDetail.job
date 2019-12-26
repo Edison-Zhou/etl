@@ -1,0 +1,3 @@
+type=command
+mainclass=cn.whaley.datawarehouse.dimension.moretv.HolidayDetail
+command=sh ${working.dir}/../../../bin/submit.sh ${mainclass} ${owner} --isOnline  ${isOnline} --mode ${mode}

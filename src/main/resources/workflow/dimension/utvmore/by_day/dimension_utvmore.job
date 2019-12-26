@@ -1,0 +1,3 @@
+type=command
+dependencies=dimension_utvmore_LayoutPage,dimension_utvmore_Subject,dimension_utvmore_MemberRight,dimension_utvmore_SourceSite,dimension_utvmore_ChannelItem
+command=echo "dimension utvmore is end ..."

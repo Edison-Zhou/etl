@@ -1,0 +1,4 @@
+#新加任务需要把名字添加到fact_medusa_by_hour.job的dependencies配置中
+type=command
+mainclass=cn.whaley.datawarehouse.fact.ConfigFactEtl
+command=sh ${working.dir}/../../../bin/fact_submit${frequency}.sh ${mainclass} --jobName fact_medusa_own_payment_purchase_flow --startDate ${startDate} --endDate ${endDate}  --startHour ${startHour} --endHour ${endHour} --isOnline  ${isOnline} --factId 18 --factColumn  ${factColumn}

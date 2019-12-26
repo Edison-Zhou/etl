@@ -1,0 +1,3 @@
+type=command
+dependencies=fact_kids_order,fact_kids_play_main2x
+command=echo "fact medusa is end ..."

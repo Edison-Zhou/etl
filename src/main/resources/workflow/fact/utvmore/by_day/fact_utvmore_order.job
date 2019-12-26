@@ -1,0 +1,4 @@
+#新加任务需要把名字添加到fact_utvmore_by_day.job的dependencies配置中
+type=command
+mainclass=cn.whaley.datawarehouse.fact.ConfigFactEtl
+command=sh ${working.dir}/../../../bin/fact_submit${frequency}.sh ${mainclass} --jobName fact_utvmore_order --startDate ${startDate} --endDate ${endDate}  --startHour ${startHour} --endHour ${endHour} --isOnline  ${isOnline} --factId 22 --factColumn  ${factColumn}

@@ -1,0 +1,3 @@
+type=command
+dependencies=dm_medusa_play,dm_medusa_station_content_click,dm_medusa_page_location_click
+command=echo "event medusa is end ..."

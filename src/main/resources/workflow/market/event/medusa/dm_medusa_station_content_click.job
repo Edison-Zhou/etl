@@ -1,0 +1,4 @@
+#新加任务需要把名字添加到event_medusa.job的dependencies配置中
+type=command
+mainclass=cn.whaley.datawarehouse.market.event.ConfigDmEtl
+command=sh ${working.dir}/../../bin/fact_submit${frequency}.sh ${mainclass} --jobName dm_medusa_station_content_click --startDate ${startDate} --endDate ${endDate}  --startHour ${startHour} --endHour ${endHour} --isOnline  ${isOnline} --factId 2 --factColumn  ${factColumn}
